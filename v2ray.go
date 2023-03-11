@@ -335,6 +335,8 @@ func (s *Instance) GetFeature(featureType interface{}) features.Feature {
 // A V2Ray instance can be started only once. Upon closing, the instance is not guaranteed to start again.
 //
 // v2ray:api:stable
+
+//this is the entry of v2ray application.
 func (s *Instance) Start() error {
 	s.access.Lock()
 	defer s.access.Unlock()
